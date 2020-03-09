@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="favicon.ico">
+  <link href="favicon.ico" rel="shortcut icon">
   <title>InkTank</title>
 </head>
 
@@ -30,7 +30,8 @@
       </div>
     </div>
 
-    <div><!--overview-->
+    <div>
+      <!--overview-->
       <h2>Overview</h2>
       <p>Purpose: Design a new tattoo app for UX design course</p>
       <p>Objective: Explore inspiration for tattoo designs according to preferences like artist and style.</p>
@@ -39,7 +40,8 @@
     </div>
 
     <div>
-      <div><!--section one-->
+      <div>
+        <!--section one-->
         <h2>Problems and Goals</h2>
         <p>In order to create a useful and intuitive tattoo app, I looked through a few of the most popular tattoo apps and read their reviews and conducted 3 initial user interviews. I wanted to determine how other people were looking for and
           organizing their tattoo inspiration and what their experiences were.</p>
@@ -57,7 +59,8 @@
         <h3>What I Discovered</h3>
         <p>People were easily overwhelmed when looking for a perfect tattoo and tattoo artist. Some people had no idea where to start, while others knew what design or style they wanted but didn’t know which tattoo artist to go to. They found it
           difficult to search for or filter out tattoo styles, and most wanted some type of consultation.</p>
-        <div><!--highlight-->
+        <div>
+          <!--highlight-->
           <h3>Problem Statement</h3>
           <p>Users need a convenient and personalized way to browse tattoo designs and the portfolios of nearby tattoo artists, with the ability to reach out for consultation/feedback in order to get their perfect tattoo.</p>
         </div>
@@ -69,9 +72,11 @@
           <source srcset="img/InkTank/personas.jpg" media="(max-width:767px)">
           <img src="img/InkTank/personas@2x.jpg" alt="User Personas">
         </picture>
-      </div><!--end section one-->
+      </div>
+      <!--end section one-->
 
-      <div><!--section two-->
+      <div>
+        <!--section two-->
         <h2>UX Design</h2>
         <p>At this point, I knew the main functions must include an explore screen, the ability to bookmark tattoo inspiration and easily go back to those photos, and the ability to message tattoo artists.</p>
         <p>I created a site map to work out the basic layout for the mobile application and started sketching out some low fidelity wireframes.</p>
@@ -86,13 +91,8 @@
         <p>After showing the prototype to a few potential users, I realized how much information the dashboard would have to include. Dividing the information into different screens would be more intuitive and help simplify it. Splitting the
           “Explore” page into “Home”, “Tattoos”, and “Artists” would be more relevant to different users, depending on if they were simply browsing or if they were seriously looking for a tattoo artist in their area to book an appointment.</p>
         <picture>
-          <source srcset="img/InkTank/Lo-Fi to Mid-Fi.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/Lo-Fi to Mid-Fi@2x.jpg" alt="Lo-Fi to Mid-Fi">
-        </picture>
-
-        <picture>
-          <source srcset="img/InkTank/personas.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/personas@2x.jpg" alt="User Personas">
+          <source srcset="img/InkTank/lo_to_mid.jpg" media="(max-width:767px)">
+          <img src="img/InkTank/lo_to_mid@2x.jpg" alt="Lo-Fi to Mid-Fi">
         </picture>
 
         <h3>Usability Testing and Feedback</h3>
@@ -131,8 +131,11 @@
             <h4>Issue 4: Interface seemed unappealing/not mature (low severity)</h4>
             <p>Change: Change navigation bar icons in favor of more minimalist/mature icons suitable for target market (age range of 18-40)</p>
           </li>
-      </div><!--end section two-->
-      <div><!--section three-->
+        </ul>
+      </div>
+      <!--end section two-->
+      <div>
+        <!--section three-->
         <h2>Polishing the Design</h2>
         <p>After fixing the discovered usability issues, I focused on creating a high-fidelity wireframe and prototype. I utilized UsabilityHub for preference testing and gathered feedback from my CareerFoundry mentor and fellow students. I also
           reviewed the WCAG to make sure the app would be accessible.</p>
@@ -152,49 +155,61 @@
         </picture>
         <h3>Specific Examples</h3>
         <h4>Search Bar</h4>
-            <p>The initial search bar was meant as a master search bar of sorts, where you could type any tattoo or artist name and a bunch of suggestions would be generated. However, users might not realize they can also search for a specific artist
-              or city, and coding this massive search tool could be a huge headache for developers. Categorizing their searches by tattoos and artists would allow users to find what they were looking for much more quickly.</p>
-            <picture>
-              <source srcset="img/InkTank/Search Progression.jpg" media="(max-width:767px)">
-              <img src="img/InkTank/Search Progression@2x.jpg" alt="Feedback">
-            </picture>
-            <h4>Personalized Dashboard</h4>
-            <p>Since tattoos are so personal, I wanted the tattoo app to have a personal feel to it. However, my initial screens asking users to select their favorite tattoo styles didn’t seem intuitive, and many participants of my usability test
-              either spent more time deciphering the screen or completely skipped the step where they could learn more about a tattoo style. I was told the screen was overwhelming, most likely due to not having enough white space.</p>
-            <picture>
-              <source srcset="img/InkTank/Onboarding Mid-Fi.jpg" media="(max-width:767px)">
-              <img src="img/InkTank/Onboarding Mid-Fi@2x.jpg" alt="Personalize Dashboard Mid-Fi">
-            </picture>
-            <p> I adjusted the flow and was able to eliminate a screen. In addition, the current iteration has a bit more breathing room, with larger images and more negative space in between rows. The informational overlay feels less cluttered and
-              gives space to show photos one-by-one.</p>
-            <picture>
-              <source srcset="img/InkTank/Onboarding Hi-Fi.jpg" media="(max-width:767px)">
-              <img src="img/InkTank/Onboarding Hi-Fi@2x.jpg" alt="Personalize Dashboard Hi-Fi">
-            </picture>
-            <h3>Overall Process</h3>
-            <p>I went over each screen with the same approach and asking the same questions:</p>
-            <ul>
-              <li>Which features are actually crucial?</li>
-              <li>Is there a way to simplify this screen?</li>
-              <li>Does the visual hierarchy make sense?</li>
-              <li>How would (persona name) want to interact with this page?</li>
-            </ul>
-            <p>I experimented a lot with my designs and constantly asked for feedback on my reiterations. I had a few mentor calls where we just focused on the UI and I bugged my sister and a few friends about more major changes. I ran a couple of preference tests for my sign-in screen, conducted usability tests, and individually messaged fellow students through Slack to check out my prototype.</p>
-            <p>The data I collected from user research helped make the prototype much more intuitive. My overall design now has larger images and fonts while gaining more white space, making it easier to scan through and simplifying the UI.</p>
-</div><!--end section three-->
-<div><!--section four-->
-<h2>Current Prototype</h2>
-<a href="#">InkTank Prototype</a>
-</div><!--end section four-->
-<div><!--section five-->
-  <h2>Future Iterations</h2>
-  <p>One participant of my usability test asked about a tattoo FAQ’s page, where common questions about pain levels and hygiene issues could be answered. I chose not to include this page due to the nature of these questions: everyone’s pain tolerance is different, and each tattoo artist should be giving instructions on how to care for their clients’ fresh ink. However, I do realize that people usually search for this information on Google or through friends, and might want an expert opinion or be able to refer back to the care instructions.  I could conduct a few interviews to determine if adding this section would be a feature people are interested in. If so, I would also conduct card sorting to see where users expected this information to be found.</p>
-</div><!--end section five-->
-  <div><!--section six-->
-    <h2>Takeaways</h2>
-    <p>I learned a lot from working on this project, from spending time with my mentor discussing pros and cons of design choices for each screen, to being reminded from testing that I should never assume my opinions and assumptions will reflect the general user.  I'm also thankful that i was able to add more tools to my toolbox.</p>
-  </div><!--end section six-->
-</div>
+        <p>The initial search bar was meant as a master search bar of sorts, where you could type any tattoo or artist name and a bunch of suggestions would be generated. However, users might not realize they can also search for a specific artist
+          or city, and coding this massive search tool could be a huge headache for developers. Categorizing their searches by tattoos and artists would allow users to find what they were looking for much more quickly.</p>
+        <picture>
+          <source srcset="img/InkTank/Search.jpg" media="(max-width:767px)">
+          <img src="img/InkTank/Search@2x.jpg" alt="Feedback">
+        </picture>
+        <h4>Personalized Dashboard</h4>
+        <p>Since tattoos are so personal, I wanted the tattoo app to have a personal feel to it. However, my initial screens asking users to select their favorite tattoo styles didn’t seem intuitive, and many participants of my usability test
+          either spent more time deciphering the screen or completely skipped the step where they could learn more about a tattoo style. I was told the screen was overwhelming, most likely due to not having enough white space.</p>
+        <picture>
+          <source srcset="img/InkTank/onboarding_mid.jpg" media="(max-width:767px)">
+          <img src="img/InkTank/onboarding_mid@2x.jpg" alt="Personalize Dashboard Mid-Fi">
+        </picture>
+        <p> I adjusted the flow and was able to eliminate a screen. In addition, the current iteration has a bit more breathing room, with larger images and more negative space in between rows. The informational overlay feels less cluttered and
+          gives space to show photos one-by-one.</p>
+        <picture>
+          <source srcset="img/InkTank/onboarding_hi.jpg" media="(max-width:767px)">
+          <img src="img/InkTank/onboarding_hi@2x.jpg" alt="Personalize Dashboard Hi-Fi">
+        </picture>
+        <h3>Overall Process</h3>
+        <p>I went over each screen with the same approach and asking the same questions:</p>
+        <ul>
+          <li>Which features are actually crucial?</li>
+          <li>Is there a way to simplify this screen?</li>
+          <li>Does the visual hierarchy make sense?</li>
+          <li>How would (persona name) want to interact with this page?</li>
+        </ul>
+        <p>I experimented a lot with my designs and constantly asked for feedback on my reiterations. I had a few mentor calls where we just focused on the UI and I bugged my sister and a few friends about more major changes. I ran a couple of
+          preference tests for my sign-in screen, conducted usability tests, and individually messaged fellow students through Slack to check out my prototype.</p>
+        <p>The data I collected from user research helped make the prototype much more intuitive. My overall design now has larger images and fonts while gaining more white space, making it easier to scan through and simplifying the UI.</p>
+      </div>
+      <!--end section three-->
+      <div>
+        <!--section four-->
+        <h2>Current Prototype</h2>
+        <a href="#">InkTank Prototype</a>
+      </div>
+      <!--end section four-->
+      <div>
+        <!--section five-->
+        <h2>Future Iterations</h2>
+        <p>One participant of my usability test asked about a tattoo FAQ’s page, where common questions about pain levels and hygiene issues could be answered. I chose not to include this page due to the nature of these questions: everyone’s pain
+          tolerance is different, and each tattoo artist should be giving instructions on how to care for their clients’ fresh ink. However, I do realize that people usually search for this information on Google or through friends, and might want an
+          expert opinion or be able to refer back to the care instructions. I could conduct a few interviews to determine if adding this section would be a feature people are interested in. If so, I would also conduct card sorting to see where users
+          expected this information to be found.</p>
+      </div>
+      <!--end section five-->
+      <div>
+        <!--section six-->
+        <h2>Takeaways</h2>
+        <p>I learned a lot from working on this project, from spending time with my mentor discussing pros and cons of design choices for each screen, to being reminded from testing that I should never assume my opinions and assumptions will reflect
+          the general user. I'm also thankful that i was able to add more tools to my toolbox.</p>
+      </div>
+      <!--end section six-->
+    </div>
   </main>
 
   <footer id="contact">
