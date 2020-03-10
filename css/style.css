@@ -1,0 +1,127 @@
+/*
+Colors used:
+Primary Color (Blue): rgb(23, 132, 185)
+Secondary Color (Black): #000000
+Secondary Color (White): #ffffff */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000000;
+}
+
+header {
+  background-color: rgb(23, 132, 185);
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+p2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+img {
+  width: 100%
+}
+
+a {
+  color: rgb(23, 132, 185);
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: rgb(95, 79, 179);
+}
+
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: rgb(23, 132, 185);
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link: visited {
+  color: #ffffff !important;
+}
+
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: rgb(23, 132, 185);
+  color: #ffffff !important;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgb(14, 76, 106);
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  color: rgb(23, 132, 185);
+}
+
+.button.contact {
+  background-color: transparent;
+  color: rgb(23, 132, 185) !important;
+  text-transform: uppercase;
+  border: 2px solid rgb(23, 132, 185);
+}
+
+.button.contact:hover .button.contact:focus {
+  background-color: rgb(23, 132, 185);
+  color: #ffffff !important;
+}
+
+.button.contact:active {
+  background-color: rgb(14, 76, 106);
+  color: #ffffff !important;
+}
