@@ -24,22 +24,22 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.35em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -60,7 +60,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: rgb(95, 79, 179);
+  color: #ffffff;
 }
 
 a:hover,
@@ -75,12 +75,8 @@ a:active {
   color: rgb(23, 132, 185);
 }
 
-.nav-link {
+.nav-link, .nav-link:visited, .nav-link:hover {
   color: #ffffff;
-}
-
-.nav-link: visited {
-  color: #ffffff !important;
 }
 
 
@@ -88,8 +84,6 @@ a:active {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: rgb(23, 132, 185);
-  color: #ffffff !important;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -111,17 +105,15 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: rgb(23, 132, 185) !important;
+  color: rgb(23, 132, 185);
   text-transform: uppercase;
   border: 2px solid rgb(23, 132, 185);
 }
 
 .button.contact:hover .button.contact:focus {
   background-color: rgb(23, 132, 185);
-  color: #ffffff !important;
 }
 
 .button.contact:active {
   background-color: rgb(14, 76, 106);
-  color: #ffffff !important;
 }
