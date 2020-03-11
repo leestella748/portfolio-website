@@ -14,13 +14,14 @@ body {
 
 header {
   background-color: rgb(23, 132, 185);
+  padding: 0.625em;
   font-weight: bold;
   font-variant: small-caps;
   color: #ffffff;
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 h1 {
