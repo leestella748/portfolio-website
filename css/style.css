@@ -80,6 +80,7 @@ a:active {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: rgb(23, 132, 185);
+  color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
