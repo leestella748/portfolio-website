@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Blue): rgb(23, 132, 185)
+Primary Color (Blue): #2B4D5D
 Secondary Color (Black): #000000
 Secondary Color (White): #ffffff */
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: rgb(23, 132, 185);
+  background-color: #2B4D5D;
   padding: 0.625em;
   font-weight: bold;
   font-variant: small-caps;
@@ -49,7 +49,7 @@ img {
 }
 
 a {
-  color: rgb(23, 132, 185);
+  color: #2B4D5D;
   text-decoration: none;
   /* No underlining */
 }
@@ -68,7 +68,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: rgb(23, 132, 185);
+  color: #2B4D5D;
 }
 
 .nav-link, .nav-link:visited, .nav-link:hover {
@@ -78,7 +78,7 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block */
-  background-color: rgb(23, 132, 185);
+  background-color: #2B4D5D;
   color: #ffffff !important;
   font-weight: 400;
   padding: 10px;
@@ -96,19 +96,19 @@ a:active {
 }
 
 .button:active {
-  color: rgb(23, 132, 185);
+  color: #2B4D5D;
 }
 
 .button.contact {
   background-color: transparent;
-  color: rgb(23, 132, 185) !important;
+  color: #2B4D5D !important;
   text-transform: uppercase;
-  border: 2px solid rgb(23, 132, 185);
+  border: 2px solid #2B4D5D;
 }
 
 .button.contact:hover .button.contact:focus {
-  background-color: rgb(23, 132, 185);
-  color: rgb(23, 132, 185) !important;
+  background-color: #2B4D5D;
+  color: #2B4D5D !important;
 }
 
 .button.contact:active {
