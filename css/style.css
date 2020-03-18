@@ -113,4 +113,5 @@ a:active {
 
 .button.contact:active {
   background-color: rgb(14, 76, 106);
+  color: #2B4D5D;
 }
