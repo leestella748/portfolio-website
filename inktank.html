@@ -13,236 +13,248 @@
 
 <body>
   <header>
-    <div>
-      <a class="nav-link" href="index.html">Stella Lee</a>
+    <div class="container">
+      <a class="logo" href="index.html">Stella Lee</a>
+      <nav>
+        <ul class="navigation">
+          <li><a class="nav-link" href="index.html">Work</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a class="nav-link" href="index.html">Work</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
-    <div class="project">
-      <h1>InkTank</h1>
-      <div>
-        <p>I designed a tattoo mobile application called InkTank as a project assignment for my UX Design course.</p>
-        <p>Tools: Balsamiq, Figma, Optimal Workshop, Usability Hub</p>
-      </div>
-    </div>
-
-    <div class="overview">
-      <!--overview-->
-      <h2>Overview</h2>
-      <p>Purpose: Design a new tattoo app for UX design course</p>
-      <p>Objective: Explore inspiration for tattoo designs according to preferences like artist and style.</p>
-      <p>Role: UX/UI design</p>
-      <p>Duration: Sept 2019 - Feb 2020</p>
-    </div>
-
-    <div class="project-body">
-      <div>
-        <!--section one-->
-        <h2>Problems and Goals</h2>
-        <p>In order to create a useful and intuitive tattoo app, I looked through a few of the most popular tattoo apps and read their reviews and conducted 3 initial user interviews. I wanted to determine how other people were looking for and
-          organizing their tattoo inspiration and what their experiences were.</p>
-
-        <h3>Competitive Analysis</h3>
-        <p>The most popular existing tattoo apps have certain user pain points, such as overwhelming interfaces (Tattoodo) or difficult search tools (InkSquad).</p>
-        <p>Most of those I interviewed relied on Instagram or Pinterest to search for tattoo inspiration. While these are great tools for browsing photos, it’s difficult to filter for a certain style or artist location so users have to use multiple
-          apps to search for inspiration and then find a tattoo artist near them.</p>
-
-        <picture>
-          <source srcset="img/InkTank/competitor_analysis.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/competitor_analysis@2x.jpg" alt="Competitor Analysis">
-        </picture>
-
-        <h3>What I Discovered</h3>
-        <p>People were easily overwhelmed when looking for a perfect tattoo and tattoo artist. Some people had no idea where to start, while others knew what design or style they wanted but didn’t know which tattoo artist to go to. They found it
-          difficult to search for or filter out tattoo styles, and most wanted some type of consultation.</p>
+    <div id="project">
+      <div class="container">
+        <h1>InkTank</h1>
         <div>
-          <!--highlight-->
-          <h3>Problem Statement</h3>
-          <p>Users need a convenient and personalized way to browse tattoo designs and the portfolios of nearby tattoo artists, with the ability to reach out for consultation/feedback in order to get their perfect tattoo.</p>
+          <p>I designed a tattoo mobile application called InkTank as a project assignment for my UX Design course.</p>
+          <p class="gray">Tools: Balsamiq, Figma, Optimal Workshop, Usability Hub</p>
         </div>
+      </div>
+    </div>
 
-        <h3>User Personas</h3>
-        <p>I created user personas to help organize different user demographics: the tattoo noob, the tattoo enthusiast, and the tattoo artist. Defining their behaviors, needs, and frustrations helped pinpoint how they would approach and navigate a
-          tattoo app.</p>
-        <picture>
-          <source srcset="img/InkTank/personas.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/personas@2x.jpg" alt="User Personas">
-        </picture>
+    <div id="overview">
+      <div class="container">
+        <!--overview-->
+        <h2>Overview</h2>
+        <p>Purpose: Design a new tattoo app for UX design course</p>
+        <p>Objective: Explore inspiration for tattoo designs according to preferences like artist and style.</p>
+        <p>Role: UX/UI design</p>
+        <p>Duration: Sept 2019 - Feb 2020</p>
       </div>
-      <!--end section one-->
 
-      <div>
-        <!--section two-->
-        <h2>UX Design</h2>
-        <p>At this point, I knew the main functions must include an explore screen, the ability to bookmark tattoo inspiration and easily go back to those photos, and the ability to message tattoo artists.</p>
-        <p>I created a site map to work out the basic layout for the mobile application and started sketching out some low fidelity wireframes.</p>
-        <picture>
-          <source srcset="img/InkTank/originalsitemap.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/originalsitemap@2x.jpg" alt="Original Site Map">
-        </picture>
+      <div id="project-body">
+        <div class="container">
+          <!--section one-->
+          <h2>Problems and Goals</h2>
+          <p>In order to create a useful and intuitive tattoo app, I looked through a few of the most popular tattoo apps and read their reviews and conducted 3 initial user interviews. I wanted to determine how other people were looking for and
+            organizing their tattoo inspiration and what their experiences were.</p>
 
-        <h3>Lo-Fi and Mid-Fi Prototypes</h3>
-        <p>I started off trying to make the interface and navigation as simple as possible, therefore choosing to draw the first wireframes with only 3 main selections and tried to fit all searching/exploring of tattoos and artists on an “Explore”
-          page.</p>
-        <p>After showing the prototype to a few potential users, I realized how much information the dashboard would have to include. Dividing the information into different screens would be more intuitive and help simplify it. Splitting the
-          “Explore” page into “Home”, “Tattoos”, and “Artists” would be more relevant to different users, depending on if they were simply browsing or if they were seriously looking for a tattoo artist in their area to book an appointment.</p>
-        <picture>
-          <source srcset="img/InkTank/lo_to_mid.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/lo_to_mid@2x.jpg" alt="Lo-Fi to Mid-Fi">
-        </picture>
+          <h3>Competitive Analysis</h3>
+          <p>The most popular existing tattoo apps have certain user pain points, such as overwhelming interfaces (Tattoodo) or difficult search tools (InkSquad).</p>
+          <p>Most of those I interviewed relied on Instagram or Pinterest to search for tattoo inspiration. While these are great tools for browsing photos, it’s difficult to filter for a certain style or artist location so users have to use multiple
+            apps to search for inspiration and then find a tattoo artist near them.</p>
 
-        <h3>Usability Testing and Feedback</h3>
-        <p>I conducted 6 moderated usability tests on my mid-fidelity prototype to</p>
-        <ul>
-          <li>Measure the learnability and intuitiveness of navigating the mobile application for first-time users</li>
-          <li>Determine what features need onboarding</li>
-          <li>Get general feedback on the usability, design, and structure of the application</li>
-        </ul>
-        <picture>
-          <source srcset="img/InkTank/prototype.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/prototype@2x.jpg" alt="Usability Testing">
-        </picture>
-        <p>I asked users to complete certain tasks during the testing process:</p>
-        <ul>
-          <li>Sign In/Create an Account: Determine if the process is smooth and users can easily sign in or create a new account</li>
-          <li>Onboarding: Determine if the current onboarding process is effective or if additional/less onboarding is necessary</li>
-          <li>Explore and Browse the App: Determine is navigation is intuitive and users can easily explore new categories or find what they are specifically looking for</li>
-          <li>Message an Artist: Determine if users can easily find a tattoo artist and message them for personalizing a tattoo design or booking a session</li>
-        </ul>
-        <h3>Usability Report</h3>
-        <ul>
-          <li>
-            <h4>Issue 1: Users had difficulty selecting certain buttons (high severity)</h4>
-            <p>Change: Increase touch spaces following guidelines suggested by Material Design (48 x 48dp with 8dp of space in between)</p>
-          </li>
-          <li>
-            <h4>Issue 2: Headings were too close to “back” icons, creating some confusion (medium severity)</h4>
-            <p>Change: Center headings while keeping the back button left-aligned</p>
-          </li>
-          <li>
-            <h4>Issue 3: Onboarding screens regarding personalization was overwhelming (medium severity)</h4>
-            <p>Change: Change the layout to incorporate tabs or horizontal scrolling, so each tattoo style is displayed separately</p>
-          </li>
-          <li>
-            <h4>Issue 4: Interface seemed unappealing/not mature (low severity)</h4>
-            <p>Change: Change navigation bar icons in favor of more minimalist/mature icons suitable for target market (age range of 18-40)</p>
-          </li>
-        </ul>
+          <picture>
+            <source srcset="img/InkTank/competitor_analysis.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/competitor_analysis@2x.jpg" alt="Competitor Analysis">
+          </picture>
+
+          <h3>What I Discovered</h3>
+          <p>People were easily overwhelmed when looking for a perfect tattoo and tattoo artist. Some people had no idea where to start, while others knew what design or style they wanted but didn’t know which tattoo artist to go to. They found it
+            difficult to search for or filter out tattoo styles, and most wanted some type of consultation.</p>
+          <div class="boxed">
+            <!--highlight-->
+            <h3>Problem Statement</h3>
+            <p>Users need a convenient and personalized way to browse tattoo designs and the portfolios of nearby tattoo artists, with the ability to reach out for consultation/feedback in order to get their perfect tattoo.</p>
+          </div>
+
+          <h3>User Personas</h3>
+          <p>I created user personas to help organize different user demographics: the tattoo noob, the tattoo enthusiast, and the tattoo artist. Defining their behaviors, needs, and frustrations helped pinpoint how they would approach and navigate a
+            tattoo app.</p>
+          <picture>
+            <source srcset="img/InkTank/personas.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/personas@2x.jpg" alt="User Personas">
+          </picture>
+        </div>
+        <!--end section one-->
+
+          <div class="container">
+          <!--section two-->
+          <h2>UX Design</h2>
+          <p>At this point, I knew the main functions must include an explore screen, the ability to bookmark tattoo inspiration and easily go back to those photos, and the ability to message tattoo artists.</p>
+          <p>I created a site map to work out the basic layout for the mobile application and started sketching out some low fidelity wireframes.</p>
+          <picture>
+            <source srcset="img/InkTank/originalsitemap.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/originalsitemap@2x.jpg" alt="Original Site Map">
+          </picture>
+
+          <h3>Lo-Fi and Mid-Fi Prototypes</h3>
+          <p>I started off trying to make the interface and navigation as simple as possible, therefore choosing to draw the first wireframes with only 3 main selections and tried to fit all searching/exploring of tattoos and artists on an “Explore”
+            page.</p>
+          <p>After showing the prototype to a few potential users, I realized how much information the dashboard would have to include. Dividing the information into different screens would be more intuitive and help simplify it. Splitting the
+            “Explore” page into “Home”, “Tattoos”, and “Artists” would be more relevant to different users, depending on if they were simply browsing or if they were seriously looking for a tattoo artist in their area to book an appointment.</p>
+          <picture>
+            <source srcset="img/InkTank/lo_to_mid.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/lo_to_mid@2x.jpg" alt="Lo-Fi to Mid-Fi">
+          </picture>
+
+          <h3>Usability Testing and Feedback</h3>
+          <p>I conducted 6 moderated usability tests on my mid-fidelity prototype to</p>
+          <ul>
+            <li>Measure the learnability and intuitiveness of navigating the mobile application for first-time users</li>
+            <li>Determine what features need onboarding</li>
+            <li>Get general feedback on the usability, design, and structure of the application</li>
+          </ul>
+          <picture>
+            <source srcset="img/InkTank/prototype.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/prototype@2x.jpg" alt="Usability Testing">
+          </picture>
+          <p>I asked users to complete certain tasks during the testing process:</p>
+          <ul>
+            <li>Sign In/Create an Account: Determine if the process is smooth and users can easily sign in or create a new account</li>
+            <li>Onboarding: Determine if the current onboarding process is effective or if additional/less onboarding is necessary</li>
+            <li>Explore and Browse the App: Determine is navigation is intuitive and users can easily explore new categories or find what they are specifically looking for</li>
+            <li>Message an Artist: Determine if users can easily find a tattoo artist and message them for personalizing a tattoo design or booking a session</li>
+          </ul>
+          <h3>Usability Report</h3>
+          <ul>
+            <li>
+              <h5>Issue 1: Users had difficulty selecting certain buttons (high severity)</h5>
+              <p>Change: Increase touch spaces following guidelines suggested by Material Design (48 x 48dp with 8dp of space in between)</p>
+            </li>
+            <li>
+              <h5>Issue 2: Headings were too close to “back” icons, creating some confusion (medium severity)</h5>
+              <p>Change: Center headings while keeping the back button left-aligned</p>
+            </li>
+            <li>
+              <h5>Issue 3: Onboarding screens regarding personalization was overwhelming (medium severity)</h5>
+              <p>Change: Change the layout to incorporate tabs or horizontal scrolling, so each tattoo style is displayed separately</p>
+            </li>
+            <li>
+              <h5>Issue 4: Interface seemed unappealing/not mature (low severity)</h5>
+              <p>Change: Change navigation bar icons in favor of more minimalist/mature icons suitable for target market (age range of 18-40)</p>
+            </li>
+          </ul>
+        </div>
+        <!--end section two-->
+
+          <div class="container">
+          <!--section three-->
+          <h2>Polishing the Design</h2>
+          <p>After fixing the discovered usability issues, I focused on creating a high-fidelity wireframe and prototype. I utilized UsabilityHub for preference testing and gathered feedback from my CareerFoundry mentor and fellow students. I also
+            reviewed the WCAG to make sure the app would be accessible.</p>
+          <picture>
+            <source srcset="img/InkTank/Dashboard_Progression.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/Dashboard_Progression@2x.jpg" alt="Progression of Dashboard UI">
+          </picture>
+          <p>Rapid iterations for the login screen. I conducted 3 preference tests to narrow the choices down and was surprised by the results.</p>
+          <picture>
+            <source srcset="img/InkTank/Reiterations.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/Reiterations@2x.jpg" alt="Reiterations">
+          </picture>
+          <p>Feedback from CareerFoundry students meant extra eyes looking at my project.</p>
+          <picture>
+            <source srcset="img/InkTank/Feedback.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/Feedback@2x.jpg" alt="Feedback">
+          </picture>
+          <h3>Specific Examples</h3>
+          <h5>Search Bar</h5>
+          <p>The initial search bar was meant as a master search bar of sorts, where you could type any tattoo or artist name and a bunch of suggestions would be generated. However, users might not realize they can also search for a specific artist
+            or city, and coding this massive search tool could be a huge headache for developers. Categorizing their searches by tattoos and artists would allow users to find what they were looking for much more quickly.</p>
+          <picture>
+            <source srcset="img/InkTank/Search.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/Search@2x.jpg" alt="Feedback">
+          </picture>
+          <h5>Personalized Dashboard</h5>
+          <p>Since tattoos are so personal, I wanted the tattoo app to have a personal feel to it. However, my initial screens asking users to select their favorite tattoo styles didn’t seem intuitive, and many participants of my usability test
+            either spent more time deciphering the screen or completely skipped the step where they could learn more about a tattoo style. I was told the screen was overwhelming, most likely due to not having enough white space.</p>
+          <picture>
+            <source srcset="img/InkTank/onboarding_mid.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/onboarding_mid@2x.jpg" alt="Personalize Dashboard Mid-Fi">
+          </picture>
+          <p> I adjusted the flow and was able to eliminate a screen. In addition, the current iteration has a bit more breathing room, with larger images and more negative space in between rows. The informational overlay feels less cluttered and
+            gives space to show photos one-by-one.</p>
+          <picture>
+            <source srcset="img/InkTank/onboarding_hi.jpg" media="(max-width:767px)">
+            <img src="img/InkTank/onboarding_hi@2x.jpg" alt="Personalize Dashboard Hi-Fi">
+          </picture>
+          <h3>Overall Process</h3>
+          <p>I went over each screen with the same approach and asking the same questions:</p>
+          <ul>
+            <li>Which features are actually crucial?</li>
+            <li>Is there a way to simplify this screen?</li>
+            <li>Does the visual hierarchy make sense?</li>
+            <li>How would (persona name) want to interact with this page?</li>
+          </ul>
+          <p>I experimented a lot with my designs and constantly asked for feedback on my reiterations. I had a few mentor calls where we just focused on the UI and I bugged my sister and a few friends about more major changes. I ran a couple of
+            preference tests for my sign-in screen, conducted usability tests, and individually messaged fellow students through Slack to check out my prototype.</p>
+          <p>The data I collected from user research helped make the prototype much more intuitive. My overall design now has larger images and fonts while gaining more white space, making it easier to scan through and simplifying the UI.</p>
+        </div>
+        <!--end section three-->
+
+          <div class="container">
+          <!--section four-->
+          <h2>Current Prototype</h2>
+          <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fo5j0YW1MaDPehaDk2Z37LH%2FInkTank%3Fnode-id%3D373%253A167%26viewport%3D225%252C950%252C0.03739725425839424%26scaling%3Dscale-down"></iframe>
+        </div>
+        <!--end section four-->
+        <div>
+          <!--section five-->
+          <h2>Future Iterations</h2>
+          <p>One participant of my usability test asked about a tattoo FAQ’s page, where common questions about pain levels and hygiene issues could be answered. I chose not to include this page due to the nature of these questions: everyone’s pain
+            tolerance is different, and each tattoo artist should be giving instructions on how to care for their clients’ fresh ink. However, I do realize that people usually search for this information on Google or through friends, and might want
+            an
+            expert opinion or be able to refer back to the care instructions. I could conduct a few interviews to determine if adding this section would be a feature people are interested in. If so, I would also conduct card sorting to see where
+            users
+            expected this information to be found.</p>
+        </div>
+        <!--end section five-->
+        <div>
+          <!--section six-->
+          <h2>Takeaways</h2>
+          <p>I learned a lot from working on this project, from spending time with my mentor discussing pros and cons of design choices for each screen, to being reminded from testing that I should never assume my opinions and assumptions will
+            reflect
+            the general user. I'm also thankful that i was able to add more tools to my toolbox.</p>
+        </div>
+        <!--end section six-->
       </div>
-      <!--end section two-->
-      <div>
-        <!--section three-->
-        <h2>Polishing the Design</h2>
-        <p>After fixing the discovered usability issues, I focused on creating a high-fidelity wireframe and prototype. I utilized UsabilityHub for preference testing and gathered feedback from my CareerFoundry mentor and fellow students. I also
-          reviewed the WCAG to make sure the app would be accessible.</p>
-        <picture>
-          <source srcset="img/InkTank/Dashboard_Progression.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/Dashboard_Progression@2x.jpg" alt="Progression of Dashboard UI">
-        </picture>
-        <p>Rapid iterations for the login screen. I conducted 3 preference tests to narrow the choices down and was surprised by the results.</p>
-        <picture>
-          <source srcset="img/InkTank/Reiterations.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/Reiterations@2x.jpg" alt="Reiterations">
-        </picture>
-        <p>Feedback from CareerFoundry students meant extra eyes looking at my project.</p>
-        <picture>
-          <source srcset="img/InkTank/Feedback.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/Feedback@2x.jpg" alt="Feedback">
-        </picture>
-        <h3>Specific Examples</h3>
-        <h4>Search Bar</h4>
-        <p>The initial search bar was meant as a master search bar of sorts, where you could type any tattoo or artist name and a bunch of suggestions would be generated. However, users might not realize they can also search for a specific artist
-          or city, and coding this massive search tool could be a huge headache for developers. Categorizing their searches by tattoos and artists would allow users to find what they were looking for much more quickly.</p>
-        <picture>
-          <source srcset="img/InkTank/Search.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/Search@2x.jpg" alt="Feedback">
-        </picture>
-        <h4>Personalized Dashboard</h4>
-        <p>Since tattoos are so personal, I wanted the tattoo app to have a personal feel to it. However, my initial screens asking users to select their favorite tattoo styles didn’t seem intuitive, and many participants of my usability test
-          either spent more time deciphering the screen or completely skipped the step where they could learn more about a tattoo style. I was told the screen was overwhelming, most likely due to not having enough white space.</p>
-        <picture>
-          <source srcset="img/InkTank/onboarding_mid.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/onboarding_mid@2x.jpg" alt="Personalize Dashboard Mid-Fi">
-        </picture>
-        <p> I adjusted the flow and was able to eliminate a screen. In addition, the current iteration has a bit more breathing room, with larger images and more negative space in between rows. The informational overlay feels less cluttered and
-          gives space to show photos one-by-one.</p>
-        <picture>
-          <source srcset="img/InkTank/onboarding_hi.jpg" media="(max-width:767px)">
-          <img src="img/InkTank/onboarding_hi@2x.jpg" alt="Personalize Dashboard Hi-Fi">
-        </picture>
-        <h3>Overall Process</h3>
-        <p>I went over each screen with the same approach and asking the same questions:</p>
-        <ul>
-          <li>Which features are actually crucial?</li>
-          <li>Is there a way to simplify this screen?</li>
-          <li>Does the visual hierarchy make sense?</li>
-          <li>How would (persona name) want to interact with this page?</li>
-        </ul>
-        <p>I experimented a lot with my designs and constantly asked for feedback on my reiterations. I had a few mentor calls where we just focused on the UI and I bugged my sister and a few friends about more major changes. I ran a couple of
-          preference tests for my sign-in screen, conducted usability tests, and individually messaged fellow students through Slack to check out my prototype.</p>
-        <p>The data I collected from user research helped make the prototype much more intuitive. My overall design now has larger images and fonts while gaining more white space, making it easier to scan through and simplifying the UI.</p>
-      </div>
-      <!--end section three-->
-      <div>
-        <!--section four-->
-        <h2>Current Prototype</h2>
-        <a href="#">InkTank Prototype</a>
-      </div>
-      <!--end section four-->
-      <div>
-        <!--section five-->
-        <h2>Future Iterations</h2>
-        <p>One participant of my usability test asked about a tattoo FAQ’s page, where common questions about pain levels and hygiene issues could be answered. I chose not to include this page due to the nature of these questions: everyone’s pain
-          tolerance is different, and each tattoo artist should be giving instructions on how to care for their clients’ fresh ink. However, I do realize that people usually search for this information on Google or through friends, and might want an
-          expert opinion or be able to refer back to the care instructions. I could conduct a few interviews to determine if adding this section would be a feature people are interested in. If so, I would also conduct card sorting to see where users
-          expected this information to be found.</p>
-      </div>
-      <!--end section five-->
-      <div>
-        <!--section six-->
-        <h2>Takeaways</h2>
-        <p>I learned a lot from working on this project, from spending time with my mentor discussing pros and cons of design choices for each screen, to being reminded from testing that I should never assume my opinions and assumptions will reflect
-          the general user. I'm also thankful that i was able to add more tools to my toolbox.</p>
-      </div>
-      <!--end section six-->
     </div>
   </main>
 
   <footer id="contact">
-    <div class="footer">
+    <div class="container">
       <h2>Get in Touch</h2>
       <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+7146834198">+714 6834198</a> or Skype: <a href="live:ac80169682ace219">live:ac80169682ace219</a>. Prefer sending an email?
       </p>
-      <div>
-        <a href="mailto:lee.stella748@gmail.com" class="button contact">Email me</a>
-      </div>
-      <div>
+      <a href="mailto:lee.stella748@gmail.com" class="button contact">Email me</a>
+      <div class="social-icons">
         <!--social media-->
-        <a href="https://www.linkedin.com/in/stella-ann-lee/" target="_blank">
-          <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g>
-              <path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z" />
-              <path
-                d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z" />
-            </g>
-          </svg></a>
-
-        <a href="https://www.behance.net/stellalee7" target="_blank">
-          <svg height="200" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960zm-749 367h-371v787h382q117 0 197-57.5t80-170.5q0-158-143-200 107-52 107-164 0-57-19.5-96.5t-56.5-60.5-79-29.5-97-8.5zm-22 318h-176v-184h163q119 0 119 90 0 94-106 94zm9 335h-185v-217h189q124 0 124 113 0 104-128 104zm650 32q-68 0-104-38t-36-107h411q1-10 1-30 0-132-74.5-220.5t-203.5-88.5q-128 0-210 86t-82 216q0 135 79 217t213 82q205 0 267-191h-138q-11 34-47.5 54t-75.5 20zm-10-366q113 0 124 122h-254q4-56 39-89t91-33zm-162-266h319v77h-319v-77z" />
-          </svg></a>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/stella-ann-lee/" target="_blank">
+              <svg class="svg-icon" version="1.1" viewBox="0 0 512 512">
+                <path
+                  d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+              </svg></a></li>
+          <li><a href="https://dribbble.com/stellaannlee" target="_blank"><svg class="svg-icon" version="1.1" viewBox="0 0 512 512">
+                <path
+                  d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,76c-99.371,0 -180,80.629 -180,180c0,99.371 80.629,180 180,180c99.176,0 180,-80.629 180,-180c0,-99.371 -80.824,-180 -180,-180Zm0,333.839c-35.532,0 -68.328,-12.103 -94.295,-32.407c2.733,-5.663 33.97,-65.79 120.651,-96.052c0.388,-0.194 0.586,-0.194 0.975,-0.392c21.672,56.03 30.456,103.082 32.8,116.553c-18.547,8.003 -38.851,12.298 -60.131,12.298Zm85.705,-26.356c-1.562,-9.371 -9.759,-54.273 -29.869,-109.523c48.222,-7.614 90.389,4.882 95.659,6.639c-6.635,42.753 -31.233,79.653 -65.79,102.884Zm-239.544,-127.289l0,-4.683c6.639,0.194 81.216,1.17 157.939,-21.867c4.49,8.59 8.59,17.374 12.492,26.162c-1.951,0.586 -4.096,1.17 -6.051,1.756c-79.261,25.575 -121.432,95.465 -124.945,101.322c-24.401,-27.136 -39.435,-63.252 -39.435,-102.69Zm272.733,-97.221c21.474,26.161 34.362,59.544 34.75,95.659c-5.076,-0.976 -55.836,-11.322 -106.984,-4.878c-1.17,-2.538 -2.15,-5.274 -3.32,-8.006c-3.124,-7.416 -6.638,-15.03 -10.152,-22.256c56.618,-23.036 82.386,-56.224 85.706,-60.519Zm-184.295,-41.976c4.1,5.468 31.431,43.538 57.006,88.83c-71.842,19.13 -135.292,18.741 -142.125,18.741c9.954,-47.635 42.167,-87.267 85.119,-107.571Zm65.401,-14.447c39.046,0 74.772,14.645 101.909,38.657c-2.733,3.902 -25.967,34.945 -80.629,55.443c-25.186,-46.267 -53.1,-84.142 -57.395,-90c11.516,-2.732 23.619,-4.1 36.115,-4.1Z" />
+              </svg> </a></li>
+          <li> <a href="https://www.behance.net/stellaannlee" target="_blank"><svg class="svg-icon" version="1.1" viewBox="0 0 512 512">
+                <path
+                  d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm6.245,330.656c0.918,-13.824 -0.208,-27.022 -3.408,-39.661c-3.229,-12.658 -8.408,-23.944 -15.66,-33.809c-7.262,-9.885 -16.512,-17.781 -27.778,-23.613c-11.324,-5.908 -24.513,-8.805 -39.585,-8.805c-13.653,0 -25.98,2.424 -37.161,7.243c-11.172,4.847 -20.763,11.475 -28.858,19.873c-8.076,8.35 -14.23,18.31 -18.661,29.852c-4.355,11.503 -6.58,23.944 -6.58,37.265c0,13.775 2.14,26.491 6.391,37.975c4.298,11.541 10.329,21.369 18.093,29.681c7.972,8.285 17.439,14.628 28.772,19.163c11.343,4.469 23.973,6.741 38.004,6.741c20.138,0 37.407,-4.611 51.58,-13.861c14.344,-9.221 24.844,-24.531 31.774,-45.975l-43.097,0c-1.667,5.51 -5.984,10.822 -13.075,15.792c-7.158,4.98 -15.679,7.47 -25.544,7.47c-13.729,0 -24.323,-3.597 -31.66,-10.755c-7.347,-7.158 -12.1,-20.488 -12.1,-34.576l128.553,0Zm-280.454,77.294c11.04,0 21.805,-1.391 32.171,-4.137c10.491,-2.755 19.835,-6.997 27.987,-12.763c8.086,-5.718 14.647,-13.131 19.466,-22.277c4.781,-9.042 7.167,-19.778 7.167,-32.257c0,-15.394 -3.664,-28.517 -11.134,-39.49c-7.432,-10.897 -18.661,-18.557 -33.781,-22.912c11.106,-5.264 19.428,-12.033 25.089,-20.289c5.634,-8.275 8.436,-18.623 8.436,-31.007c0,-11.447 -1.884,-21.132 -5.624,-28.867c-3.844,-7.849 -9.212,-14.079 -16.066,-18.766c-6.969,-4.686 -15.196,-8.104 -24.853,-10.149c-9.705,-2.111 -20.328,-3.124 -32.096,-3.124l-115.999,0l0,246.038l119.237,0Zm-6.173,-109.655c11.655,0 21.132,2.679 28.252,8.076c7.091,5.463 10.67,14.476 10.67,27.153c0,6.467 -1.051,11.826 -3.238,15.954c-2.178,4.146 -5.188,7.422 -8.805,9.808c-3.636,2.481 -7.925,4.166 -12.772,5.217c-4.772,1.07 -9.847,1.543 -15.177,1.543l-57.829,0l0,-67.751l58.899,0Zm226.403,-26.671c-5.823,-6.428 -15.66,-9.913 -27.675,-9.913c-7.82,0 -14.287,1.316 -19.475,3.996c-5.075,2.651 -9.221,5.936 -12.393,9.818c-3.162,3.938 -5.302,8.104 -6.561,12.554c-1.25,4.336 -2.007,8.265 -2.225,11.74l79.605,0c-1.165,-12.478 -5.435,-21.709 -11.276,-28.195Zm-234.612,-67.799c4.801,0.001 9.469,0.341 13.937,1.212c4.535,0.786 8.455,2.225 11.92,4.318c3.484,2.016 6.258,4.885 8.35,8.559c2.017,3.673 3.011,8.407 3.011,14.125c0,10.32 -3.011,17.828 -9.24,22.382c-6.296,4.62 -14.249,6.893 -23.84,6.893l-54.828,0l0,-57.489l50.69,0Zm255.999,-1.126l0,-24.276l-99.733,0l0,24.276l99.733,0Z" />
+              </svg> </a></li>
+          <li> <a href="https://twitter.com/StellaAnnLee" target="_blank"> <svg class="svg-icon" version="1.1" viewBox="0 0 512 512">
+                <path
+                  d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+              </svg> </a></li>
+        </ul>
+        <p> Copyright Stella Lee 2020</p>
       </div>
     </div>
-    <p> Copyright Stella Lee 2020</p>
   </footer>
 </body>
 
