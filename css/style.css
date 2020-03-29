@@ -132,6 +132,10 @@ a:active {
   color: #2B4D5D;
 }
 
+.button.center {
+  margin: 0 auto;
+}
+
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -150,6 +154,18 @@ a:active {
 #hero h1 {
   text-align: center;
   /* Centers text */
+}
+
+#hero p {
+  text-align: center;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
 }
 
 .logo {
@@ -200,6 +216,7 @@ main {
 
 footer {
   padding-top: 50px;
+  text-align: center;
 }
 
 .social-icons {
@@ -224,4 +241,25 @@ footer {
 .boxed {
   border: 1px solid #707070;
   padding: 0 10px;
+}
+
+.boxed h3 {
+  text-align: center;
+}
+
+.copyright {
+  opacity: 40%;
+}
+
+#about h1, h2 {
+  text-align: center;
+}
+
+#project h1 {
+  text-align: center;
+}
+
+.prototype {
+  max-width: 300px;
+  display: inline-block;
 }
