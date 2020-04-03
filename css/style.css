@@ -61,7 +61,7 @@ h5 {
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 a {
@@ -132,8 +132,85 @@ a:active {
   color: #2B4D5D;
 }
 
-.button.center {
+.footer-social-icons {
+  width: 350px;
+  display: block;
   margin: 0 auto;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+ul.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-behance {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-behance:hover {
+  background-color: #0057ff;
+}
+
+.fa-dribbble {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-dribbble:hover {
+  background-color: #ea4c88;
+}
+
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
 }
 
 /* Layout styling */
@@ -151,13 +228,9 @@ a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#hero h1 {
+#hero {
   text-align: center;
   /* Centers text */
-}
-
-#hero p {
-  text-align: center;
 }
 
 #work h2 {
@@ -166,10 +239,14 @@ a:active {
 
 #contact h2 {
   text-align: center;
+  padding-top: 50px;
 }
 
 .logo {
   max-width: 250px;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2.5em;
 }
 
 nav>ul {
@@ -196,10 +273,6 @@ nav>ul>li>a {
 
 main {
   padding-top: 133px;
-}
-
-.intro {
-  padding-bottom: 50px;
 }
 
 #project .gray {
@@ -262,4 +335,145 @@ footer {
 .prototype {
   max-width: 300px;
   display: inline-block;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  #about .center {
+    margin-left: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+}
+
+/* ==============================
+Animations
+================================= */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* Border X get width  */
+.borderXwidth a:before, .borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
+}
+
+.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.borderXwidth a:hover:before, .borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
 }
