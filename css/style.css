@@ -80,6 +80,7 @@ a:focus {
   color: #cc6540;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+  text-decoration: none;
 }
 
 a:active {
@@ -256,6 +257,7 @@ nav>ul {
 
 nav>ul>li {
   display: inline-block;
+  position: relative;
 }
 
 nav>ul>li>a {
@@ -452,7 +454,7 @@ Animations
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-/* Border X get width  */
+/* nav bar animation  */
 .borderXwidth a:before, .borderXwidth a:after {
   position: absolute;
   opacity: 0;
