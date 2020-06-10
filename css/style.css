@@ -144,11 +144,12 @@ a:active {
 
 ul.social-icons {
   margin-top: 10px;
+  padding-left: 0px;
 }
 
 .social-icons li {
   vertical-align: top;
-  display: inline;
+  display: inline-block;
   height: 100px;
 }
 
