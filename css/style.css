@@ -240,7 +240,7 @@ ul.social-icons {
 
 #contact h2 {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .logo {
@@ -288,6 +288,10 @@ nav>ul>li>a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+#hero .container {
+  padding-top: 60px;
 }
 
 main {
